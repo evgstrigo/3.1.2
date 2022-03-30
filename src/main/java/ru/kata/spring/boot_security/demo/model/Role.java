@@ -25,9 +25,6 @@ public class Role implements GrantedAuthority {
     public Role() {
     }
 
-    @ManyToMany(mappedBy ="roles" )
-    private Set<User> users;
-
 
     @Override
     public String getAuthority() {
